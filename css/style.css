@@ -4,8 +4,34 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Arial", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+header {
+    height: 50px;
+}
+
 main {
-    margin: 70px 20px 20px 100px;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+    padding-top: 30px;
 }
 
 .container {
@@ -13,20 +39,149 @@ main {
     margin: 0 auto;
 }
 
-.row{
+footer {
+    height: 100px;
+}
+
+.container-footer {
+    width: 1300px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.row {
     display: flex;
     flex-wrap: wrap;
 }
 
+.container-footer .row {
+    height: 100%;
+}
+
 .col-16 {
     width: calc(100% / 6);
-    background-color: chocolate;
+    min-width: 180px;
+}
+
+.col-15 {
+    width: 15%;
+}
+
+.col-70 {
+    width: 70%;
 }
 
 .content {
-    margin: 10px;
+    margin: 10px 5px;
 }
 
 .content img {
     width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.labels {
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    left: 0;
+}
+
+.t-r-angle {
+    position: fixed;
+    display: flex;
+    top: 5px;
+    right: 5px;
+}
+
+.label {
+    padding: 5px;
+}
+
+.m-lr-5-20 {
+    margin-left:  5px;
+    margin-right: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+footer i::before {
+    font-size: 30px;
+}
+
+.fa-angle-up::before {
+    font-size: 15px;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.ta-right {
+    text-align: right;
+}
+
+.p-5 {
+    padding: 5px;
+}
+
+.ac-center {
+    align-content: center;
+}
+
+.font-footer {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ptop-15 {
+    padding-top: 15px;
+}
+
+.ending {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 60px;
+    text-align: center;
+}
+
+/* BACKGROUNG COLOR */
+
+.bg-grey {
+    background-color: #222222;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-light-grey {
+    background-color: #4A4A4A;
+}
+
+.bg-light-grey-t {
+    background-color: #4a4a4a7e;
+}
+
+/* TEXT COLOR */
+
+.c-white {
+    color: white;
+}
+
+.c-red {
+    color: red;
+}
+
+.c-green {
+    color: green;
 }
